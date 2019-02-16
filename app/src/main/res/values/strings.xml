@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">YupayApp</string>
+    <string name="hello">AndroidFileBrowserExampleActivity</string>
+    <string name="tipo_aprendizaje_prompt">Escoja un tipo</string>
+    <string-array name="tipo_aprendizaje_arrays">
+        <item>Escoja un tipo de aprendizaje</item>
+        <item>Reflexivo</item>
+        <item>Teórico</item>
+        <item>Pragmático</item>
+    </string-array>
+    <string name="tipo_inteligencia_prompt">Escoja un tipo de intelijencia</string>
+    <string-array name="tipo_inteligencia_arrays">
+        <item>Escoja un tipo de inteligencia</item>
+        <item>Naturalista</item>
+        <item>Física</item>
+        <item>Cinestética</item>
+    </string-array>
+    <string name="grados_prompt">Escoja un grado</string>
+    <string-array name="grados_arrays">
+        <item>Escoge grado</item>
+        <item>Primero</item>
+        <item>Segundo</item>
+        <item>Tercero</item>
+        <item>Cuarto</item>
+        <item>Quinto</item>
+        <item>Sexto</item>
+        <item>Septimo</item>
+        <item>Octavo</item>
+        <item>Noveno</item>
+        <item>Decimo</item>
+        <item>Once</item>
+    </string-array>
+</resources>

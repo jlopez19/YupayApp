@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="jlopez.com.yupayapp">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@drawable/icono"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@drawable/icono"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".activities.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activities.LoginActivity" />
+        <activity android:name=".activities.MenuAdministradorActivity" />
+        <activity android:name=".activities.MenuEstudianteActivity" />
+        <activity android:name=".activities.ListaTemaActivity" />
+        <activity android:name=".activities.RegistrarEstudianteActivity" />
+        <activity android:name=".activities.VistaActivity" />
+        <activity android:name=".activities.PDFActivity" />
+        <activity android:name=".activities.RegistrarRecursoActivity" />
+        <activity android:name=".activities.RegistrarTemaActivity"></activity>
+    </application>
+
+</manifest>

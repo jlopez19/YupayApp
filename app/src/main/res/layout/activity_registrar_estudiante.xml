@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/fondo_pantalla"
+    android:layout_height="match_parent"
+    tools:context=".activities.RegistrarEstudianteActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="300dp"
+        android:layout_height="500dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/fondo_login"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.272" />
+
+    <EditText
+        android:id="@+id/etRegistrar"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="196dp"
+        android:hint="Ingese login"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+    <Spinner
+        android:id="@+id/spn_grado"
+        android:layout_width="230dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="8dp"
+        android:entries="@array/grados_arrays"
+        android:prompt="@string/grados_prompt"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/etRegistrar" />
+
+    <Spinner
+        android:id="@+id/spn_tipo"
+        android:layout_width="230dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="12dp"
+        android:entries="@array/tipo_aprendizaje_arrays"
+        android:prompt="@string/tipo_aprendizaje_prompt"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/spn_grado" />
+
+    <Spinner
+        android:id="@+id/spn_nivel"
+        android:layout_width="230dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="12dp"
+        android:entries="@array/tipo_inteligencia_arrays"
+        android:prompt="@string/tipo_inteligencia_prompt"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/spn_tipo" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="230dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/btn"
+        android:onClick="registrarEstudiante"
+        android:text="Registrar estudiante"
+        android:textColor="@color/colorBoton"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/spn_nivel"
+        app:layout_constraintVertical_bias="0.241" />
+</android.support.constraint.ConstraintLayout>
